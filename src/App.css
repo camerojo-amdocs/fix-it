@@ -1,0 +1,134 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  /* overflow-y: hidden; */
+}
+
+html body {
+  padding: 0;
+  margin: 0;
+  /* overflow-y: inherit; */
+}
+
+.App {
+  text-align: center;
+}
+
+input.inputBox {
+    font-size: 20px;
+    padding: 12px 8px 12px 8px;
+    border-radius: 3px;
+    border: 1px solid #666;
+}
+
+.calendarWrap {
+    display: inline-block;
+    position: relative;
+}
+
+.calendarElement {
+    position: absolute;
+    left: 265%;
+    transform: translateX(-50%);
+    top: 0px;
+    border: 1px solid #ccc;
+    z-index: 999;
+}
+
+
+.left-menu {
+  padding: 50px;
+  margin: 30px;
+  width: 900px;
+  min-height: 100vh;
+  float: left;
+}
+
+
+.right-menu {
+  padding: 60px;
+  width: 550px;
+  min-height: 100vh;
+  float: right;
+  position: relative;
+  text-align: justify;
+  left: 10%;
+  top: 0px;
+}
+
+
+.vl {
+  /* border-left: 2px solid black; */
+  height: 84%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 8%;
+}
+
+#tableView {
+  scroll-behavior: auto;
+  height: 320px;
+  display: inline-block; 
+  overflow: auto;
+}
+
+input[type="text"],
+input[type="password"] {
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #01d28e;
+  border: 1px solid #01d28e;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+input[type="submit"]:hover {
+  background: #6cf0c2;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  
+  background-color: white;
+  padding: 2rem;
+  border: 1px solid purple;
+  width: 30%;
+  margin: auto;
+  margin-top: 5%;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.list-container {
+  display: flex;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
